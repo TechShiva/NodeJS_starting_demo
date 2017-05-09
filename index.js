@@ -55,20 +55,18 @@ app.listen(app.get('port'), function() {
 });     
 
 var msgConnector = new msgBuilder.ChatConnector({
-    appId: "f126e5af-beaa-4774-8144-4d2e300df102",
-    appPassword: "Phm137R0bCG9vu5rXgCc0pw"
+    appId: "e2da2f99-833f-496a-8778-2cb1b2e6db06",
+    appPassword: "GwStcbGb2NFWwCGvFcoiN3f"
 });
 var msgBot = new msgBuilder.UniversalBot(msgConnector);
 
 var callConnector = new callBuilder.CallConnector({
-    callbackUri: "https://skypecalling-demo.herokuapp.com/api/calls",
-    appId: "f126e5af-beaa-4774-8144-4d2e300df102",
-    appPassword: "Phm137R0bCG9vu5rXgCc0pw",
+    callbackUri: "https://nodejsdemo01.herokuapp.com/api/calls",
+    appId: "e2da2f99-833f-496a-8778-2cb1b2e6db06",
+    appPassword: "GwStcbGb2NFWwCGvFcoiN3f",
 });
 var callBot = new callBuilder.UniversalCallBot(callConnector);
 
-//server.post("/api/messages", msgConnector.listen());
-//server.post("/api/calls", callConnector.listen());
 app.post("/api/messages",msgConnector.listen());
 app.post("/api/calls",callConnector.listen());
 
