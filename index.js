@@ -55,15 +55,15 @@ app.listen(app.get('port'), function() {
 });     
 
 var msgConnector = new msgBuilder.ChatConnector({
-    appId: "e2da2f99-833f-496a-8778-2cb1b2e6db06",
-    appPassword: "GwStcbGb2NFWwCGvFcoiN3f"
+    appId: "37b58779-ad1f-4859-a8fe-e046959362a2",
+    appPassword: "1CRxb2mwCA2aNnT4jctoieC"
 });
 var msgBot = new msgBuilder.UniversalBot(msgConnector);
 
 var callConnector = new callBuilder.CallConnector({
     callbackUri: "https://nodejsdemo01.herokuapp.com/api/calls",
-    appId: "e2da2f99-833f-496a-8778-2cb1b2e6db06",
-    appPassword: "GwStcbGb2NFWwCGvFcoiN3f",
+    appId: "37b58779-ad1f-4859-a8fe-e046959362a2",
+    appPassword: "1CRxb2mwCA2aNnT4jctoieC",
 });
 var callBot = new callBuilder.UniversalCallBot(callConnector);
 
