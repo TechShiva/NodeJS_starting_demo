@@ -75,8 +75,8 @@ msgBot.dialog("/", function (session) {
 });
 
 callBot.dialog("/", function (session) {
+    session.answer();
     session.send("Hello Shailendra. How may I help you");
 });
-
 
 
